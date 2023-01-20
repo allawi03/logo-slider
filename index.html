@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Logo Slider</title>
+</head>
+<style>
+body {
+  align-items: center;
+  justify-content: center;
+}
+@keyframes scroll{
+  0%{
+      transform: translateX(0);
+  }
+  100%{
+    transform: translateX(calc(-250px * 7));
+  }	
+}
+.slider{
+  height: 150px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+}
+.slider .slide-track{
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width calc(250px * 14);
+}
+.slider .slide{
+  height: 250px;
+  width: 250px;
+}
+</style>
+<body>
+<div class="slider">
+<div class="slide-track">
+<div class="slide">
+<img src="https://drive.google.com/uc?export=view&id=1KRcA_e4IXkhOV8l2L9kCnSXTYbY-FnmS" height="131" width="120" alt="" />
+</div>
+<div class="slide">
+<img src="https://drive.google.com/uc?export=view&id=1KRcA_e4IXkhOV8l2L9kCnSXTYbY-FnmS" height="131" width="120" alt="" />
+</div>
+<div class="slide">
+<img src="https://drive.google.com/uc?export=view&id=1KRcA_e4IXkhOV8l2L9kCnSXTYbY-FnmS" height="131" width="120" alt="" />
+</div>
+<div class="slide">
+<img src="https://drive.google.com/uc?export=view&id=1KRcA_e4IXkhOV8l2L9kCnSXTYbY-FnmS" height="131" width="120" alt="" />
+</div>
+</body>
+</html>
